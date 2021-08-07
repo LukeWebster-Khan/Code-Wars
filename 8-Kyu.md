@@ -1,4 +1,4 @@
-# Total Completed: 33
+# Total Completed: 3
 
 ## String Repeat
 
@@ -54,5 +54,21 @@ Complete the solution so that it reverses the string passed into it.
 ```javascript
 function solution(str) {
   return str.split("").reverse().join("");
+}
+```
+
+## Return Negative
+
+https://www.codewars.com/kata/55685cd7ad70877c23000102
+
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+```javascript
+function makeNegative(num) {
+  if (num > 0) {
+    return num * -1;
+  } else {
+    return num;
+  }
 }
 ```
