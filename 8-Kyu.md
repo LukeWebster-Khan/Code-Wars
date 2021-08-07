@@ -1,4 +1,4 @@
-# Total Completed: 3
+# Total Completed: 10
 
 ## String Repeat
 
@@ -70,5 +70,88 @@ function makeNegative(num) {
   } else {
     return num;
   }
+}
+```
+## Remove First and Last Character
+
+https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+```javascript
+function removeChar(str){
+return str.slice(1, -1);
+};
+```
+
+## Opposite Number
+
+https://www.codewars.com/kata/56dec885c54a926dcd001095
+
+Very simple, given a number, find its opposite.
+
+```javascript
+function opposite(number) {
+ return -number
+}
+```
+
+## Sum of Positive
+
+https://www.codewars.com/kata/5715eaedb436cf5606000381
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+```javascript
+function positiveSum(arr) {
+ var removeNeg = arr.filter(function(val) {
+     return val >= 0;
+});
+   return removeNeg.reduce((a, b) => a + b, 0)
+}
+```
+
+## Remove String Spaces
+
+https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+
+Simple, remove the spaces from the string, then return the resultant string.
+
+```javascript
+function noSpace(x){
+return x = x.replace(/\s+/g, '');
+  console.log(x)
+}
+```
+
+## Even or Odd
+
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+
+Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+```javascript
+function even_or_odd(number) {
+if (number %  2) {
+  return "Odd";
+  }else {
+    return "Even"
+  }
+}
+```
+
+## Multiply
+
+https://www.codewars.com/kata/50654ddff44f800200000004
+
+This code does not execute properly. Try to figure out why.
+
+```javascript
+function multiply(a,b){
+  return a * b;
 }
 ```
