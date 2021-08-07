@@ -1,4 +1,4 @@
-# Total Completed: 10
+# Total Completed: 33
 
 ## String Repeat
 
@@ -30,5 +30,29 @@ Simples!
 ```javascript
 function fixTheMeerkat(arr) {
   return arr.reverse();
+}
+
+/* Second Solution*/
+
+function fixTheMeerkat(arr) {
+  let end = arr.shift();
+  let start = arr.pop();
+
+  arr.push(end);
+  arr.unshift(start);
+
+  return arr;
+}
+```
+
+## Reversed Strings
+
+https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+
+Complete the solution so that it reverses the string passed into it.
+
+```javascript
+function solution(str) {
+  return str.split("").reverse().join("");
 }
 ```
