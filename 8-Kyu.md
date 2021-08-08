@@ -1,4 +1,4 @@
-# Total Completed: 10
+# Total Completed: 12
 
 ## Convert boolean values to strings 'Yes' or 'No'.
 
