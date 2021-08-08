@@ -1,5 +1,23 @@
 # Total Completed: 10
 
+## Is it s Palindrome?
+
+https://www.codewars.com/kata/57a1fd2ce298a731b20006a4
+
+Write a function that checks if a given string (case insensitive) is a palindrom
+
+```javascript
+function isPalindrome(x) {
+  let polishedString = x.replace(/\W+|_/g, "").toLowerCase();
+  let reversedString = polishedString.split("").reverse().join("");
+
+  if (polishedString != reversedString) return false;
+  else {
+    return true;
+  }
+}
+```
+
 ## String Repeat
 
 https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
@@ -72,6 +90,7 @@ function makeNegative(num) {
   }
 }
 ```
+
 ## Remove First and Last Character
 
 https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
@@ -79,9 +98,9 @@ https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 
 ```javascript
-function removeChar(str){
-return str.slice(1, -1);
-};
+function removeChar(str) {
+  return str.slice(1, -1);
+}
 ```
 
 ## Opposite Number
@@ -92,7 +111,7 @@ Very simple, given a number, find its opposite.
 
 ```javascript
 function opposite(number) {
- return -number
+  return -number;
 }
 ```
 
@@ -108,10 +127,10 @@ Note: if there is nothing to sum, the sum is default to 0.
 
 ```javascript
 function positiveSum(arr) {
- var removeNeg = arr.filter(function(val) {
-     return val >= 0;
-});
-   return removeNeg.reduce((a, b) => a + b, 0)
+  var removeNeg = arr.filter(function (val) {
+    return val >= 0;
+  });
+  return removeNeg.reduce((a, b) => a + b, 0);
 }
 ```
 
@@ -122,9 +141,9 @@ https://www.codewars.com/kata/57eae20f5500ad98e50002c5
 Simple, remove the spaces from the string, then return the resultant string.
 
 ```javascript
-function noSpace(x){
-return x = x.replace(/\s+/g, '');
-  console.log(x)
+function noSpace(x) {
+  return (x = x.replace(/\s+/g, ""));
+  console.log(x);
 }
 ```
 
@@ -136,10 +155,10 @@ Create a function (or write a script in Shell) that takes an integer as an argum
 
 ```javascript
 function even_or_odd(number) {
-if (number %  2) {
-  return "Odd";
-  }else {
-    return "Even"
+  if (number % 2) {
+    return "Odd";
+  } else {
+    return "Even";
   }
 }
 ```
@@ -151,7 +170,7 @@ https://www.codewars.com/kata/50654ddff44f800200000004
 This code does not execute properly. Try to figure out why.
 
 ```javascript
-function multiply(a,b){
+function multiply(a, b) {
   return a * b;
 }
 ```
