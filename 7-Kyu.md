@@ -1,4 +1,4 @@
-# Total Completed: 2
+# Total Completed: 3
 
 ## Jaden Casing Strings
 
