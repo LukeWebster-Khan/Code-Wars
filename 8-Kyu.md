@@ -1,4 +1,18 @@
-# Total Completed: 12
+# Total Completed: 13
+
+## Convert a Number to a String!
+
+https://www.codewars.com/kata/5265326f5fda8eb1160004c8/solutions/javascript/me/best_practice
+
+We need a function that can transform a number into a string.
+
+What ways of achieving this do you know?
+
+```javascript
+function numberToString(num) {
+  return String(num);
+}
+```
 
 ## Convert boolean values to strings 'Yes' or 'No'.
 
