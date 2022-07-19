@@ -205,3 +205,10 @@ function multiply(a, b) {
   return a * b;
 }
 ```
+
+## Geometry basics: Distance between points in 2D
+https://www.codewars.com/kata/58dced7b702b805b200000be
+```javascript
+distanceBetweenPoints = (a,b) => Math.hypot(a.x - b.x, a.y - b.y)
+```
+
